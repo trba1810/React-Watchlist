@@ -1,6 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/layout/Header";
+import Counter from "./Components/WatchPages/Counter";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Header />);
+root.render(
+  <div>
+    <Header />
+    <div className="p-3 m-3 row text-center">
+      <Counter />
+    </div>
+  </div>
+);
